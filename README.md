@@ -1,62 +1,3 @@
-## Getting Started
-
-### Prerequisites
-
-Ensure you have the following installed:
-
-- Node.js
-- npm 
--  Create MongoDB Atlas Account
-- Create Cloudinary Account
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/rishabhgupta2004/HOMEHEAVEN.git
-   cd homeheaven
-   git clone https://github.com/Deepanshishukla24/HOMEHEAVEN.git
-   ```
-
-2. Install the dependencies for both the client and server:
-   ```bash
-   cd client
-   npm install
-   cd ../server
-   npm install
-   ```
-
-3. Set up environment variables:
-
-   Create a `.env` file in the `server` directory and add your MongoDB URI and JWT secret:
-
-   ```plaintext
-   MONGODB_URI=your_mongodb_uri
-   JWT_SECRET=your_jwt_secret
-   ```
-
-
-### Running the Application
-
-1. Start the backend server:
-   ```bash
-   cd server
-   npm start
-   ```
-
-2. Start the frontend development server:
-   ```bash
-   cd client
-   npm start
-   ```
-
-3. Open your browser and navigate to `http://localhost:3000` to see the application in action.
-
-
-
-
----
-
 # Hospital Management System
 
 Welcome to the Hospital Management System, a comprehensive solution for managing hospital operations including patient management, appointment scheduling, and administrative controls.
@@ -65,11 +6,17 @@ Welcome to the Hospital Management System, a comprehensive solution for managing
    **Training project**
 
 - **Anurag Kushwaha**
+  
   - **Email-** anuragkushwaha1501@gmail.com
+    
 - **Anurag Trivedi**
+  
   - **Email-** anuragtrivediindian@gmail.com
+    
 - **Aryan Chaurasia**
+  
   - **Email-** aryanchaurasia033@gmail.com
+  
 
 ## Frontend
 
@@ -87,7 +34,7 @@ Welcome to the Hospital Management System, a comprehensive solution for managing
 - **React Router**: Declarative routing for React applications.
 - **Axios**: Promise-based HTTP client for backend API communication.
 
-### Getting Started
+### Installation
 
 ### Prerequisites
 
@@ -101,24 +48,19 @@ To get a local copy up and running:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/hospital-management-system-frontend.git
-cd hospital-management-system-frontend
+git clone https://github.com/anuragkushwaha1501/Hospital-Management-System.git
+cd frontend
 ```
 
 2. Install dependencies:
+```bash
 npm install
+```
 
 3. Run the development server:
+```bash
 npm run dev
-
-
-### Contributing
-
-Contributions are welcome! Fork the project, make your changes, and submit a pull request.
-
-### License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+```
 
 ---
 
@@ -143,13 +85,47 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ### Installation
 
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js
+- npm 
+- MongoDB Compass / Create MongoDB Atlas Account 
+- Create Cloudinary Account
+
+To get a local copy up and running:
+
 1. Clone the repository:
+```bash
+git clone https://github.com/anuragkushwaha1501/Hospital-Management-System.git
+cd backend
+```
 
 2. Install dependencies:
+```bash
+npm install
+```
 
-3. Set up environment variables in a `.env` file:
+3. Set up environment variables:
+Create a `.env` file in the `backend` directory and add the given details:
+```plaintext
+PORT=
+MONGO_URL=
+FRONTEND_URL=
+DASHBOARD_URL=
+JWT_SECRET_KEY=
+JWT_EXPIRES=
+COOKIE_EXPIRE=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_SECRET=
+CLOUDINARY_API_KEY=
+```
 
-4. Start the server:
+4. Run the development server:
+```bash
+npm run dev
+```
 
 **API Endpoints**
 
@@ -163,9 +139,68 @@ Supports authentication for Admin, Doctor, and Patient roles using JWT. Middlewa
 
 Error handling middleware (errorMiddleware.js) manages validation errors, JWT errors, MongoDB errors, etc., returning structured JSON error messages.
 
+---
 
-**License**
+## Dashboard
+
+### Installation
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js
+- npm 
+
+
+To get a local copy up and running:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/anuragkushwaha1501/Hospital-Management-System.git
+cd dashboard
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+---
+
+### Running the Application
+
+1. Start the backend server:
+   ```bash
+   cd backend
+   npm start
+   ```
+
+2. Start the frontend development server:
+   ```bash
+   cd frontend
+   npm start
+   ```
+
+3. Open your browser and navigate to `http://localhost: _your_frontend_localhost_port` to see the application in action.
+
+4. Start the dashboard development server:
+   ```bash
+   cd dashboard
+   npm start
+   ```
+   
+5. Open your browser and navigate to `http://localhost: _your_dashboard_localhost_port` to see the application in action.
+
+### Contributing
+
+Contributions are welcome! Fork the project, make your changes, and submit a pull request.
+
+### License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-
