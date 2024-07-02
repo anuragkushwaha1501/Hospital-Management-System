@@ -100,8 +100,10 @@ Ensure you have the following installed:
 To get a local copy up and running:
 
 1. Clone the repository:
+```bash
 git clone https://github.com/your-username/hospital-management-system-frontend.git
 cd hospital-management-system-frontend
+```
 
 2. Install dependencies:
 npm install
